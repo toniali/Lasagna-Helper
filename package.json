@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "My First Discord Bot",
   "main": "bot.js",
+  "scripts": {
+    "start" : "node index.js"
+  },
   "author": "Unknown",
   "dependencies": {
     "date-and-time": "^0.7.0",
@@ -14,3 +17,4 @@
     "winston": "^3.2.1"
   }
 }
+
