@@ -1,0 +1,20 @@
+Updating bot commands
+
+1. Go to command prompt
+2. Type or copy "npm install discord.io winston -save"
+3. Then copy "npm install https://github.com/woor/discord.io/tarball/gateway_v6"
+
+_____________________________________________________
+|                                                    |
+|  If you forgot how to get your bot online do this  |
+|  1. In command prompt type Path file to bot folder |
+|  2. and Then type node bot.js                      |
+|                                                    |
+|                                                    |
+|                                                    |
+|____________________________________________________|
+
+If error says something about discord.js
+type in command prompt "npm install discord.js"
+
+Create custom bot commands link https://github.com/AdityaTD/PenguBot/wiki/Guide-to-Custom-Commands
