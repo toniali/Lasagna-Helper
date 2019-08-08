@@ -1,23 +1,22 @@
 {
-  "name": "bot",
-  "version": "1.0.0",
-  "description": "My First Discord Bot",
-  "main": "bot.js",
-  "author": "Unknown",
-  "dependencies": {
-    "date-and-time": "^0.7.0",
-    "dateformat": "^3.0.3",
-    "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
-    "discord.js": "^11.5.1",
-    "fs": "0.0.1-security",
-    "ms": "^2.1.2",
-    "winston": "^3.2.1",
-    "ws": "^7.1.1"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "license": "ISC"
+"name": "lasagna-helper",
+"version": "1.0.0",
+"description": "Another bot yet to be created!",
+"main": "index.js",
+"scripts": {
+  "start": "node index.js"
+},
+"repository": {
+  "type": "git",
+  "url": "https://github.com/572512230701006851/Lasagna-Helper"
+},
+"keywords": [],
+"author": "",
+"license": "ISC",
+"bugs": {
+  "url": "https://github.com/572512230701006851/Lasagna-Helper/issues"
+},
+"dependencies": {
+  "discord.js": "^11.5.1"
+}
 }
