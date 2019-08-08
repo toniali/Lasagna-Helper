@@ -17,6 +17,7 @@
   "url": "https://github.com/572512230701006851/Lasagna-Helper/issues"
 },
 "dependencies": {
-  "discord.js": "^11.5.1"
+  "discord.js": "^11.5.1",
+  "ms": "2.1.2"
 }
 }
