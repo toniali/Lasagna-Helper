@@ -1,9 +1,13 @@
 const botconfig = require("./botconfig.json");
-const tokenfile = require("./auth.json");
 const Discord = require("discord.js");
 const fs = require("fs");
 const bot = new Discord.Client({disableEveryone: true});
-bot.commands = new Discord.Collection
+const config = require('dotenv').config();
+
+bot.commands = new Discord.Collection;
+const tokenfile = process.env.CLIENT_TOKEN;
+
+console.log ("tokenfile=" + tokenfile);
 
 fs.readdir("./commands/", (err, files) => {
 
@@ -30,6 +34,12 @@ bot.on("message", async message => {
     let args = messageArray.slice(1);
     let commandfile = bot.commands.get(cmd.slice(prefix.length));
     if(commandfile) commandfile.run(bot, message, args)
-})
+});
 
-bot.login(tokenfile.token)
+// try{
+//     console.log ("before login.. token=" + tokenfile.token );
+    bot.login(tokenfile);
+//     console.log ("after login.. ");
+// } catch (err){
+//     console.log ("when login.. "+ err);
+// }
