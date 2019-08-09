@@ -1,9 +1,9 @@
 
 module.exports.run = async (message, bots, args) => {
 
-    let user = message.guild.member(message.mentions.users.first());
+    let user = message.mentions.users.first();
     if(user){
-        let member = message.guild.member.mentions;
+        let member = message.guild.member(user);
         if(member){
             let muted = message.guild.roles.find(role => role.name == "muted")
             if(!muted){
