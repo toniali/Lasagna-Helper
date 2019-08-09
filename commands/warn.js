@@ -21,7 +21,7 @@ module.exports.run = async (bots, message, args) => {
             }
             return message.channel.send(`Successfully warned ${wUser}`)
         })
-    } return message.channel.send('You need manage messages to use this command!')
+    } else return message.channel.send('You need manage messages to use this command!')
 
 }
 
