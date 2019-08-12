@@ -19,6 +19,8 @@ module.exports.run = async (bots, message, args) => {
             if(err){
                 console.log(err);
             }
+            console.log (" **in warn.js, after write to file, before send.")
+
             return message.channel.send(`Successfully warned ${wUser}`)
         })
     } else return message.channel.send('You need manage messages to use this command!')

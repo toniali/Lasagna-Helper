@@ -1,8 +1,8 @@
-const Discord = require('discord.js')
+const Discord = require('discord.js');
 
 module.exports.run = async (bots, message, args) => {
 
-    const user = message.mentions.users.first
+    const user = message.mentions.user.first();
     if(!user) return message.channel.send('You didn\'t mention a user!');
     if(!message.guild.member.hasPermission("BAN_MEMBERS")) return message.channel.send('You need the ban member permission!');
     const member = message.guild.member(user);
